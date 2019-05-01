@@ -59,7 +59,7 @@ request.onload = function() {
                 <p>${email}</p>`;
                 
                 info.innerHTML = templateCero;
-                console.log(templateCero);       
+                //console.log(templateCero);       
             })     
          }
 
@@ -77,7 +77,7 @@ request.onload = function() {
                 <p>${email}</p></div>`;
                 
                 info.innerHTML = templateOne;
-                console.log(templateOne);       
+                //console.log(templateOne);       
             })     
          }
 
@@ -95,7 +95,7 @@ request.onload = function() {
                 <p>${email}</p></div>`;
                 
                 info.innerHTML = templateTwo;
-                console.log(templateTwo);       
+                //console.log(templateTwo);       
             })     
          }
 
@@ -113,7 +113,7 @@ request.onload = function() {
                 <p>${email}</p></div>`;
                 
                 info.innerHTML = templateThree;
-                console.log(templateThree);       
+                //console.log(templateThree);       
             })     
          }
 
@@ -131,7 +131,7 @@ request.onload = function() {
                 <p>${email}</p></div>`;
                 
                 info.innerHTML = templateFour;
-                console.log(templateFour);       
+                //console.log(templateFour);       
             })     
          }
         resultRaitignCero();
@@ -148,16 +148,32 @@ request.onload = function() {
         arrayBase.push(newArray);    
     });
     arrayBase.sort();
-    console.log(arrayBase);
-    
-
-    o = dataRestaurant.map(function(k) {
-        l= k.name;
-        console.log(
-         Object.assign(k,{arrayBase:l})
-         );
+    //console.log(arrayBase);
+    templacteAlphabet = ``
+    for (const i in arrayBase) {
+        if (arrayBase.hasOwnProperty(i)) 
+        {arrayBase
+            const element = arrayBase[i];
+            arrayBase     
+           //info.innerHTML = element;
+            console.log(element);
+            templacteAlphabet += `<p>${element}</p>`;
+            info.innerHTML = templacteAlphabet;
         
-    }) 
+        }
+        g = dataRestaurant.map(function(k) {
+            l= k.name;
+            m= Object.assign(k,{arrayBase:l})
+             return m;
+             
+        
+        
+          
+        })
+    }
+     
+console.log(o);
+
     
 } 
         
